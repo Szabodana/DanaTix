@@ -1,0 +1,28 @@
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.emailButton {
+    background-color: #d0ac35;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.emailButton:active {
+    transform: scale(97%);
+}
+
+.emailButton:hover {
+    background-color: #b5962f;
+}
+
+.statusMessage {
+    font-size: 1.5em;
+}

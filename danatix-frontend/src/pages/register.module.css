@@ -1,0 +1,126 @@
+.registration-container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.registration-form h2 {
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #d29d00;
+}
+
+.container form .inputBox input {
+    position: relative;
+    width: 100%;
+    outline: none;
+    padding: 15px 10px;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.register-button {
+    background-color: #d29d00;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.register-button:hover {
+    transform: scale(1.05);
+    background-color: #e8ae00;
+}
+
+.register-button:active {
+    transform: scale(0.95);
+    background-color: #b8942c;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-top: 10px;
+    width: 14px;
+    height: 14px;
+    margin-bottom: 10px;
+}
+
+.container form .accept-terms {
+    font-size: 1em;
+    color: #d29d00;
+    margin-top: 12px;
+}
+
+.registration-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.inputBox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.error-message {
+    font-size: 10px;
+    color: red;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    z-index: 100;
+}
+
+.inputField {
+    border: none;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.12);
+    padding: 8px 0;
+    width: 100%;
+    margin-bottom: 2px;
+    outline: none;
+    transition: border-bottom 0.3s ease;
+}
+
+.inputField:focus {
+    border-bottom: 1px solid #d29d00;
+}
+
+.registration-icon img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+
+    .registration-form h2 {
+        font-size: 24px;
+    }
+
+    .register-button {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,113 @@
+.registrationContainer {
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-top: 40%;
+    margin-bottom: 50px;
+}
+
+.registrationForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registrationFormH2 {
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: rgb(210, 157, 0);
+}
+
+.labelField {
+    color: rgba(171, 129, 0, 0.75);
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+}
+
+.inputBox {
+    width: 100%;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.inputField {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 8px 0;
+    outline: none;
+    transition: border-bottom 0.3s ease;
+}
+
+.inputField:focus {
+    border-bottom: 1px solid #d29d00;
+}
+
+.errorMessage {
+    font-size: 12px;
+    color: red;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    z-index: 100;
+}
+
+.registerButton {
+    background-color: #d29d00;
+    border: none;
+    color: white;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.registerButton:hover {
+    transform: scale(1.05);
+    background-color: rgb(232, 174, 0);
+}
+
+.registerButton:active {
+    transform: scale(0.95);
+    background-color: #b8942c;
+}
+
+.successMessage {
+    color: green;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .registrationContainer {
+        width: 100%;
+        padding: 30px;
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+
+    .registrationFormH2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .labelField {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+    .inputBox {
+        margin-bottom: 15px;
+        font-size: 10px;
+    }
+}

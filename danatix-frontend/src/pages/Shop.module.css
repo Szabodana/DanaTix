@@ -1,0 +1,140 @@
+.shopContainer {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 600px;
+    max-width: 100%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.tabButtons {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.tabButton {
+    padding: 10px;
+    font-size: 16px;
+    background: none;
+    height: 40px;
+    width: 100px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.tabButton.active {
+    color: #333;
+    border-bottom: 2px solid #d29d00;
+}
+
+.itemList {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.ticketTable {
+    width: 100%;
+    text-align: center;
+}
+
+.ticketTable td {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.addToCartButton {
+    background-color: #d29d00;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.addToCartButton:hover {
+    background-color: rgb(232, 174, 0);
+}
+
+.title {
+    color: #d29d00;
+    font-size: 25px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+    .shopContainer {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .tabButtons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .tabButton {
+        padding: 10px;
+        font-size: 14px;
+        width: 120px;
+        height: 40px;
+    }
+
+    .addToCartButton {
+        padding: 4px 10px;
+    }
+
+    .ticketTable td {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+    .shopContainer {
+        padding: 5px;
+    }
+
+    .tabButton {
+        padding: 10px;
+        font-size: 12px;
+        width: 100px;
+        height: 35px;
+    }
+
+    .addToCartButton {
+        padding: 2px 6px;
+    }
+
+    .ticketTable td {
+        padding: 6px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+}
